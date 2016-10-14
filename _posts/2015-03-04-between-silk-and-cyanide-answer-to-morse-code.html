@@ -1,0 +1,36 @@
+---
+layout: post
+title: Between Silk and Cyanide - Answer to Morse code
+date: 2015-03-04 20:50:19.000000000 -03:00
+type: post
+published: true
+status: publish
+categories:
+- math
+tags:
+- crypto
+- morse
+meta:
+  _edit_last: '6346225'
+  _publicize_pending: '1'
+  geo_public: '0'
+author:
+  login: pedropjr
+  email: ppaulojr@gmail.com
+  display_name: Pedro Paulo
+  first_name: ''
+  last_name: ''
+---
+<p>I've read the book Between Silk and Cyanide by Leo Marks and wrote the following comment on Goodreads:</p>
+<blockquote><p><span id="freeTextreview1218115704">Between Silk and Cyanide was a wonderful recommendation I received and it really paid off. When you think about cryptography during WWII the names that come to mind are Bletchley Park and Alan Turing, but Leo Marks did a fantastic job too. He describes his battle with the bureaucracy to provide better codes to the agents on the field in a very humorous tone, also he writes very well and the book is very agreeable to read.</p>
+<p>My only regret is not having discovered this book while my grandpa was still alive a few years ago. He worked for 40 years as a WT operator and there are several morse code issues the book discuss and he would love to talk about it, in fact I learned morse from him. The last time we met he showed me a poem he wrote to his wife (my grandma) using morse code.</p>
+<p>Even if you are not into cryptography you will enjoy this book. However if the cryptography bug infects you I'd suggest other two good books one non-fiction <a title="The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography by Simon Singh" href="http://www.goodreads.com/book/show/17994.The_Code_Book__The_Science_of_Secrecy_from_Ancient_Egypt_to_Quantum_Cryptography">The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography</a> from Simon Singh, and other a spy novel from <a title="Robert Littell" href="http://www.goodreads.com/author/show/101398.Robert_Littell">Robert Littell</a>which has as main part of the plot the <a href="http://en.wikipedia.org/wiki/Baconian_theory_of_Shakespeare_authorship#References_in_popular_culture" rel="nofollow">"Baconian theory of Shakespeare authorship"</a> and the <a href="http://en.wikipedia.org/wiki/Bacon%27s_cipher" rel="nofollow">Bacon's Cipher</a>: <a title="The Amateur by Robert Littell" href="http://www.goodreads.com/book/show/1675554.The_Amateur">The Amateur</a>.</p>
+<p>I'm grateful to the author of <a title="Arriving at Amen: Seven Catholic Prayers That Even I Can Offer by Leah Libresco" href="http://www.goodreads.com/book/show/23374343.Arriving_at_Amen__Seven_Catholic_Prayers_That_Even_I_Can_Offer">Arriving at Amen: Seven Catholic Prayers That Even I Can Offer</a> , Ms. <a title="Leah Libresco" href="http://www.goodreads.com/author/show/7339967.Leah_Libresco">Leah Libresco</a>, for the recommendation of Between Silk and Cyanide.</p>
+<p>P.S.: (<a href="http://morse-code.eu/m/eJxjZBQRYXDOS81TqCrKUMjLTFLwS0xPSixLUkjJKFIoqlJIzstVKCxKK8hLTCvSAwA2IQ7D" rel="nofollow">have fun and crack, not so hard...</a>!)</span></p></blockquote>
+<p>But maybe it's hard, so a guess on how to crack it.</p>
+<p>Step 1) Record the Morse transmission on Audacity or other program you like.</p>
+<p>Step 2) Optional: Clean the Background noise showing a noise profile to Audacity and then filtering out the noise.</p>
+<p>Step 3) Look at the wave</p>
+<p><a href="https://nobodyreadit.files.wordpress.com/2015/03/captura-de-tela-2015-03-04-c3a0s-17-34-33.png"><img class="aligncenter wp-image-117 size-large" src="{{ site.baseurl }}/assets/captura-de-tela-2015-03-04-c3a0s-17-34-33.png?w=700" alt="morse-code-message" width="700" height="59" /></a></p>
+<p>As you might guess the long wave is a <strong>dash</strong> and the short one a <strong>point</strong>.</p>
+<p>Knowing this and the morse code, you can easily decode the morse and then apply some very-easy "crypto" to get the plaintext. It has to do with something in the review.</p>

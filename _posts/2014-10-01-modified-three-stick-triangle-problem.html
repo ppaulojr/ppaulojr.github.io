@@ -1,0 +1,99 @@
+---
+layout: post
+title: Modified three stick triangle problem
+date: 2014-10-01 01:06:17.000000000 -03:00
+type: post
+published: true
+status: publish
+categories:
+- math
+tags:
+- math
+- probability
+- problems
+meta:
+  _wpas_skip_facebook: '1'
+  _wpas_skip_google_plus: '1'
+  _wpas_skip_twitter: '1'
+  _wpas_skip_linkedin: '1'
+  _wpas_skip_tumblr: '1'
+  _wpas_skip_path: '1'
+  _publicize_pending: '1'
+  _edit_last: '6346225'
+  _rest_api_published: '1'
+  _rest_api_client_id: "-1"
+  geo_public: '0'
+author:
+  login: pedropjr
+  email: ppaulojr@gmail.com
+  display_name: Pedro Paulo
+  first_name: ''
+  last_name: ''
+excerpt: Suppose you break a stick in a random point of its length, from the two pieces
+  you have now, choose the largest piece and break again randomly. What is the likelihood
+  of you form a triangle with the three pieces?
+---
+<p>Studying at PUC-Rio there was a course called Probabilistic Models given by the Telecommunication Engineering Department, which was well-known for their creative approach to student evaluation. In one of those exams there was a question described below:</p>
+<blockquote><p>Suppose you break a stick in a random point of its length, from the two pieces you have now, choose the largest piece and break again randomly. What is the likelihood of you form a triangle with the three pieces?</p></blockquote>
+<p>Before you go nuts looking in Google, note that this problem is slightly different from the <em>"three stick triangle problem"</em> , in ours the second time you choose to break the biggest piece which is different of breaking a stick into 3 pieces directly. <strong>Warning</strong>: if you want to try to solve it, stop reading now. There are two ways to solve this problem, a computational way, that was not the case at the time, and an analytical form. The analytic form is interesting but requires further mathematical knowledge. But a computational form is available for anyone who knows how to program as in the Python script below.</p>
+<div class="wp_syntax">
+<table>
+<tbody>
+<tr>
+<td class="code">
+<pre class="python">from  random  import  random
+def isTriangle ( a , b , c ) :
+        listT =  [ a , b , c ] 
+        listT. sort ( ) 
+        if  ( listT[2] &lt; (listT[1] + listT[0])) :
+                 return True 
+        else :
+                 return False
+ 
+def breakRule ( ) :
+        p =  random ( ) 
+        if  ( p &lt;  0.5 ) :
+                a = p
+                p1 =  random ( ) 
+                b =  ( 1 -p ) * p1
+                c =  ( 1 -p ) - b
+         else :
+                a =  ( 1.0 - p ) 
+                p1 =  random ( ) 
+                b = p * p1
+                c = p - b
+         return isTriangle ( a , b , c )
+ 
+yes =  0 
+no =  0
+ 
+for i in  xrange ( 100000 ) :
+         if breakRule ( ) :
+                yes + =  1 
+        else :
+                not + =  1
+ 
+print  "Number of times that worked:% d" % yes
+print  "Number of times that went wrong:% d" % not
+print  "Probability:% f" % ( float (yes)) / (yes + no)</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Now let's see how to solve it analytically. &lt;continue&gt; Considering the ruler as having length 1, we divide the problem into two parts that are symmetrical. In the first part the break occurred at the point n ( <strong>0 &lt;n &lt;0.5</strong> ) until 50% of the length of the ruler. Thus the second break may not occur, to respect the triangular inequality:</p>
+<p>$latex A&gt;B+C$</p>
+<p>where <strong>A</strong> is the length of the longest piece in the sections:</p>
+<p>$latex [N,\frac{1}{2}];[1-(\frac{1}{2}-n);1]$</p>
+<p>As you can see in the figure below:</p>
+<p><a href="https://nobodyreadit.files.wordpress.com/2014/10/tri-300x129.png"><img class=" size-full wp-image-105 aligncenter" src="{{ site.baseurl }}/assets/tri-300x129.png" alt="Tri-300x129" width="300" height="129" /></a></p>
+<p>Thus, once the break point in the ruler n&gt;0.5  the probability of forming a triangle is given by:</p>
+<p><a href="https://nobodyreadit.files.wordpress.com/2014/10/breakr-300x138.png"><img class=" size-full wp-image-103 aligncenter" src="{{ site.baseurl }}/assets/breakr-300x138.png" alt="breakR-300x138" width="300" height="138" /></a></p>
+<p><a href="https://nobodyreadit.files.wordpress.com/2014/10/latex-php-4.png"><img class="aligncenter size-full wp-image-110" src="{{ site.baseurl }}/assets/latex-php-4.png" alt="latex.php-4" width="84" height="21" /></a></p>
+<p>Therefore, the probability of forming a triangle is:</p>
+<p><a href="https://nobodyreadit.files.wordpress.com/2014/10/latex-php.png"><img class="aligncenter size-full wp-image-107" src="{{ site.baseurl }}/assets/latex-php.png" alt="latex.php" width="149" height="45" /></a></p>
+<p>Solving the integral we get:</p>
+<p><a href="https://nobodyreadit.files.wordpress.com/2014/10/latex-php-2.png"><img class="aligncenter size-full wp-image-108" src="{{ site.baseurl }}/assets/latex-php-2.png" alt="latex.php-2" width="144" height="20" /></a></p>
+<p>As we were two symmetrical that the probability of forming a triangle problems is:</p>
+<p><a href="https://nobodyreadit.files.wordpress.com/2014/10/latex-php-3.png"><img class="aligncenter size-full wp-image-109" src="{{ site.baseurl }}/assets/latex-php-3.png" alt="latex.php-3" width="165" height="20" /></a></p>
+<p>That's the same value obtained by our simulation.</p>
