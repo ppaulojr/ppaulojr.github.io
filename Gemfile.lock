@@ -128,16 +128,13 @@ GEM
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     unicode-display_width (1.1.1)
-    xml-simple (1.1.5)
-    youtube (0.8.6)
-      xml-simple (>= 1.0.9)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   github-pages
-  youtube
+  jekyll-paginate
 
 BUNDLED WITH
    1.13.3

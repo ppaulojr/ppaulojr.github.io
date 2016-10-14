@@ -6,3 +6,4 @@ github_username:  ppaulojr
 
 markdown: kramdown
 highlighter: rouge
+gems:                [jekyll-paginate, kramdown, jekyll-gist]
