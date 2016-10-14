@@ -4,6 +4,7 @@ title:  "Welcome!"
 date:   2016-10-13 18:00:29 -0300
 categories: metapost
 ---
+h1. {{ page.title }}
 
 This is a post just to configure Jekyll.
 
