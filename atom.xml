@@ -1,0 +1,26 @@
+---
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Pedro Paulo Oliveira Jr</title>
+ <link href="http://ppaulojr.github.io/atom.xml" rel="self"/>
+ <link href="http://ppaulojr.github.io/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://ppaulojr.github.io/</id>
+ <author>
+   <name>Pedro Paulo Oliveira Jr</name>
+   <email>ppaulojr at google free email that you know about</email>
+ </author>
+
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://ppaulojr.github.io{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://ppaulojr.github.io{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+
+</feed>
