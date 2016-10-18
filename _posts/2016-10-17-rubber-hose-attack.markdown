@@ -18,10 +18,13 @@ Althought the reliability of the intel acquired under duress is questionable it'
 
 Here's some suggestions:
 
-1) Allow admin or sensitive data access from within your office.
-2) Revoke admin password of anyone that goes on vacation. That's valid if you believe rubber-hose attacks won't happen in US soil.
-3) Encrypt your sensitive passwords using (Shamir Secret Sharing)[https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing)
-4) Implement a duress-password-system.
+ 1) Allow admin or sensitive data access from within your office.
+
+ 2) Revoke admin password of anyone that goes on vacation. That's valid if you believe rubber-hose attacks won't happen in US soil.
+
+ 3) Encrypt your sensitive passwords using [Shamir Secret Sharing](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing)
+
+ 4) Implement a duress-password-system.
 
 The duress password system, if well implemented is very interesting because it permits the captured sysadmin to handover a valid password and by entering it valid data will be delivered.
 
