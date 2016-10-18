@@ -24,7 +24,7 @@ Here's some suggestions:
 
  3) Encrypt your sensitive passwords using [Shamir Secret Sharing](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing)
 
- 4) Implement a duress-password-system.
+ 4) Implement a duress password system.
 
 The duress password system, if well implemented is very interesting because it permits the captured sysadmin to handover a valid password and by entering it valid data will be delivered.
 
