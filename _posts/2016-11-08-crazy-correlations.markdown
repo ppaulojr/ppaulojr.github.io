@@ -11,17 +11,18 @@ The catalyst for this post was a paper published a few years ago named “Voodoo
 
 In the paper the authors said:
 
-> We have identified a weather station whose temperature readings predict daily changes in the value of a specific set of stocks with a correlation of r 5 %0.87. For $50, we will provide the list of stocks to any interested reader. That way, you can buy the stocks every morning when the weather station posts a drop in temperature and sell when the temperature goes up.
+>_ We have identified a weather station whose temperature readings predict daily changes in the value of a specific set of stocks with a correlation of r 5 %0.87. For $50, we will provide the list of stocks to any interested reader. That way, you can buy the stocks every morning when the weather station posts a drop in temperature and sell when the temperature goes up._
 
 So I decided to mythbuster-it.
 
 So, look at the map of the correlation between Dow Jones Index and the high-temp of the day
-![Correlation high-temp vs Dow Jones Index](https://raw.githubusercontent.com/ppaulojr/CrazyCorrelation/master/weather/results/crazy_us.png)
+
+<img src="https://raw.githubusercontent.com/ppaulojr/CrazyCorrelation/master/weather/results/crazy_us.png" width="600" alt="Correlation high-temp vs Dow Jones Index">
 _Correlation high-temp vs Dow Jones Index_
 
 One of the cities with a very high correlation was [Riverhead, NY](http://en.wikipedia.org/wiki/Riverhead_(town),_New_York) (mostly because of missing temperature data).
 
-![Riverhead correlation](https://raw.githubusercontent.com/ppaulojr/CrazyCorrelation/master/weather/results/plotRiverheadNY.png)
+<img src="https://raw.githubusercontent.com/ppaulojr/CrazyCorrelation/master/weather/results/plotRiverheadNY.png" width="600" alt="Riverhead, NY correlation">
 
 ## Data Sources: 
 Dow Jones Index (NYSE), Temperatures (NCDC/NOAA)
