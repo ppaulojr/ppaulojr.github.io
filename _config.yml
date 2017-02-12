@@ -1,4 +1,5 @@
 title: Pedro Paulo Oliveira Jr
+description: Personal website
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ppaulojr.github.io" # the base hostname & protocol for your site
 twitter_username: ppaulojr
@@ -6,4 +7,5 @@ github_username:  ppaulojr
 
 markdown: kramdown
 highlighter: rouge
+theme: jekyll-theme-slate
 gems: [jekyll-paginate, kramdown, jekyll-gist, jekyll-youtube]
