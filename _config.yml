@@ -7,5 +7,5 @@ github_username:  ppaulojr
 
 markdown: kramdown
 highlighter: rouge
-theme: jekyll-theme-cayman
+theme: jekyll-theme-slate
 gems: [jekyll-paginate, kramdown, jekyll-gist, jekyll-youtube]
