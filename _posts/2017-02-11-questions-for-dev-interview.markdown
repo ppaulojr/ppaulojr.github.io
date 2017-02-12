@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Questions for interviewing devs"
-date:   2016-02-11 15:00:00 -0300
+date:   2017-02-11 15:00:00 -0300
 categories: interview
 ---
 
