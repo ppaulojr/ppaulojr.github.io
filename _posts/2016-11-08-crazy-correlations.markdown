@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Crazy Correlations"
 date:   2016-11-08 10:30:29 -0300
 categories: statistics

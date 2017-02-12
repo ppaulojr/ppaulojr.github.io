@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Rubber-hose attacks"
 date:   2016-10-17 18:30:29 -0300
 categories: security

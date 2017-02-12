@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Side-effects of security jobs"
 date:   2016-10-16 08:00:29 -0300
 categories: security
