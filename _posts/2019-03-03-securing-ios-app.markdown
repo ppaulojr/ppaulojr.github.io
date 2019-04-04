@@ -1,3 +1,9 @@
+---
+layout: default
+title:  "Securing an iOS App"
+date:   2019-03-03 15:00:00 -0300
+categories: development
+---
 # Securing an iOS App
 
 Developing an iOS app that meet security standards like PCI-DSS, HIPAA, FISMA among others is challenging. The main reason is that we need to understand the main vectors of attack to an app and sometimes that comes with experience and pentests.
